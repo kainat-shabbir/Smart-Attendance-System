@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageTimetableActivity"
+    android:background="@color/teal_200"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_add_timetable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="100pt"
+        android:text="Add Timetable"
+        app:cornerRadius="18dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_margin="5dp"
+        android:padding="12dp"
+        android:background="@android:color/darker_gray" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/timetable_spinner" />
+    <ListView
+        android:id="@+id/lv_all_employee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

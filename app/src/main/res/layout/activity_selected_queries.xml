@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".SelectedQueriesActivity"
+    android:padding="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:id="@+id/tv_query_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:text="date and time of query"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/tv_query_askedby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:hint="name of the person sent the message"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:background="@color/cardview_light_background"
+            android:id="@+id/tv_query_statement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:lines="5"
+            android:text="Query statement"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            >
+
+            <Button
+                android:id="@+id/btn_reject_query"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Reject"
+                android:textSize="16sp"
+                app:cornerRadius="18sp" />
+
+            <Button
+                android:id="@+id/btn_accept_query"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Accept"
+                android:textSize="16sp"
+                app:cornerRadius="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
